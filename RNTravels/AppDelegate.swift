@@ -25,21 +25,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func initRootViewController()  {
         let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        let navigationController = mainStoryBoard.instantiateViewController(withIdentifier: "RNNavigationVC") as! UINavigationController
-        var rootVC:BaseViewController;
+        
         
         let isUserLoggedIn = false
         
-        rootVC = mainStoryBoard.instantiateViewController(withIdentifier: isUserLoggedIn ? "RNDashboardVC" : "RNLoginVC") as! BaseViewController
+        if isUserLoggedIn{
+            let rootVC = mainStoryBoard.instantiateViewController(withIdentifier: "RNNavigationVC") as! UINavigationController
+            self.window?.rootViewController = rootVC
+        }else{
+            let rootVC = mainStoryBoard.instantiateViewController(withIdentifier: "RNLoginVC") as! LoginViewController
+            self.window?.rootViewController = rootVC
+        }
         
-//        if isUserLoggedIn{
-//            rootVC = mainStoryBoard.instantiateViewController(withIdentifier: "RNDashboardVC") as! DashboardViewController
-//        }else{
-//            rootVC = mainStoryBoard.instantiateViewController(withIdentifier: "RNLoginVC") as! LoginViewController
-//        }
         
-        navigationController.viewControllers = [rootVC]
-        self.window?.rootViewController = navigationController
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

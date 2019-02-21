@@ -16,6 +16,7 @@
 		B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F96221DBEFB001B3163 /* LoginViewController.swift */; };
 		B46C5F99221DC68B001B3163 /* postLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F98221DC68B001B3163 /* postLogin.storyboard */; };
 		B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */; };
+		B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B46C5F96221DBEFB001B3163 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B46C5F98221DC68B001B3163 /* postLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = postLogin.storyboard; sourceTree = "<group>"; };
 		B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				B46C5F94221DBEBA001B3163 /* BaseViewController.swift */,
 				B46C5F96221DBEFB001B3163 /* LoginViewController.swift */,
 				B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */,
+				B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */,
 				B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */,
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
