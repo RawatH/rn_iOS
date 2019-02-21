@@ -1,20 +1,26 @@
 //
-//  LoginViewController.swift
+//  DashboardViewController.swift
 //  RNTravels
 //
-//  Created by Harish on 20/02/19.
+//  Created by Harish on 21/02/19.
 //  Copyright © 2019 PACTS. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+class DashboardViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg.jpg")!)
-
+        loadNextViewController()
         // Do any additional setup after loading the view.
+    }
+    
+    func loadNextViewController(){
+        let isUserLogged = true
+        if isUserLogged {
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

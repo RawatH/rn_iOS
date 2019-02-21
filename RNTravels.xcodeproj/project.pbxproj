@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F7B221DBE22001B3163 /* AppDelegate.swift */; };
-		B46C5F7E221DBE22001B3163 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F7D221DBE22001B3163 /* SplashViewController.swift */; };
 		B46C5F81221DBE22001B3163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F7F221DBE22001B3163 /* Main.storyboard */; };
 		B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F82221DBE22001B3163 /* RNTravels.xcdatamodeld */; };
 		B46C5F86221DBE22001B3163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F85221DBE22001B3163 /* Assets.xcassets */; };
 		B46C5F89221DBE22001B3163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F87221DBE22001B3163 /* LaunchScreen.storyboard */; };
 		B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F94221DBEBA001B3163 /* BaseViewController.swift */; };
 		B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F96221DBEFB001B3163 /* LoginViewController.swift */; };
+		B46C5F99221DC68B001B3163 /* postLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F98221DC68B001B3163 /* postLogin.storyboard */; };
+		B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B46C5F78221DBE22001B3163 /* RNTravels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNTravels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46C5F7B221DBE22001B3163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B46C5F7D221DBE22001B3163 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		B46C5F80221DBE22001B3163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B46C5F83221DBE22001B3163 /* RNTravels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RNTravels.xcdatamodel; sourceTree = "<group>"; };
 		B46C5F85221DBE22001B3163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		B46C5F8A221DBE22001B3163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B46C5F94221DBEBA001B3163 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B46C5F96221DBEFB001B3163 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B46C5F98221DC68B001B3163 /* postLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = postLogin.storyboard; sourceTree = "<group>"; };
+		B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				B46C5F87221DBE22001B3163 /* LaunchScreen.storyboard */,
 				B46C5F8A221DBE22001B3163 /* Info.plist */,
 				B46C5F82221DBE22001B3163 /* RNTravels.xcdatamodeld */,
+				B46C5F98221DC68B001B3163 /* postLogin.storyboard */,
 			);
 			path = RNTravels;
 			sourceTree = "<group>";
@@ -76,9 +79,9 @@
 		B46C5F90221DBE6E001B3163 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B46C5F7D221DBE22001B3163 /* SplashViewController.swift */,
 				B46C5F94221DBEBA001B3163 /* BaseViewController.swift */,
 				B46C5F96221DBEFB001B3163 /* LoginViewController.swift */,
+				B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				B46C5F89221DBE22001B3163 /* LaunchScreen.storyboard in Resources */,
 				B46C5F86221DBE22001B3163 /* Assets.xcassets in Resources */,
+				B46C5F99221DC68B001B3163 /* postLogin.storyboard in Resources */,
 				B46C5F81221DBE22001B3163 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,7 +183,7 @@
 			files = (
 				B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */,
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
-				B46C5F7E221DBE22001B3163 /* SplashViewController.swift in Sources */,
+				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
 				B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */,
 				B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */,
 			);
