@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10478C53221FD5C600194CED /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10478C52221FD5C600194CED /* TestViewController.swift */; };
 		B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F7B221DBE22001B3163 /* AppDelegate.swift */; };
 		B46C5F81221DBE22001B3163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F7F221DBE22001B3163 /* Main.storyboard */; };
 		B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F82221DBE22001B3163 /* RNTravels.xcdatamodeld */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10478C52221FD5C600194CED /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B46C5F78221DBE22001B3163 /* RNTravels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNTravels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46C5F7B221DBE22001B3163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46C5F80221DBE22001B3163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,16 +49,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10478C4F221FD50500194CED /* New Group */ = {
+		10478C51221FD5B800194CED /* Rawat Singh */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
-		10478C50221FD50900194CED /* Rawat Singh */ = {
-			isa = PBXGroup;
-			children = (
+				10478C52221FD5C600194CED /* TestViewController.swift */,
 			);
 			path = "Rawat Singh";
 			sourceTree = "<group>";
@@ -80,8 +76,7 @@
 		B46C5F7A221DBE22001B3163 /* RNTravels */ = {
 			isa = PBXGroup;
 			children = (
-				10478C50221FD50900194CED /* Rawat Singh */,
-				10478C4F221FD50500194CED /* New Group */,
+				10478C51221FD5B800194CED /* Rawat Singh */,
 				B46C5F93221DBE96001B3163 /* application */,
 				B46C5F92221DBE88001B3163 /* network */,
 				B46C5F91221DBE7F001B3163 /* models */,
@@ -205,6 +200,7 @@
 			files = (
 				B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */,
 				B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */,
+				10478C53221FD5C600194CED /* TestViewController.swift in Sources */,
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
 				B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */,
