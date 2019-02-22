@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10478C53221FD5C600194CED /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10478C52221FD5C600194CED /* TestViewController.swift */; };
+		10478C57221FD66F00194CED /* test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10478C56221FD66F00194CED /* test2ViewController.swift */; };
 		B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F7B221DBE22001B3163 /* AppDelegate.swift */; };
 		B46C5F81221DBE22001B3163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F7F221DBE22001B3163 /* Main.storyboard */; };
 		B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F82221DBE22001B3163 /* RNTravels.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		10478C52221FD5C600194CED /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		10478C56221FD66F00194CED /* test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2ViewController.swift; sourceTree = "<group>"; };
 		B46C5F78221DBE22001B3163 /* RNTravels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNTravels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46C5F7B221DBE22001B3163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46C5F80221DBE22001B3163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		10478C55221FD62400194CED /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				10478C56221FD66F00194CED /* test2ViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
 				B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */,
+				10478C57221FD66F00194CED /* test2ViewController.swift in Sources */,
 				B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */,
 				B46C5FA0221F798C001B3163 /* NetworkContants.swift in Sources */,
 			);
