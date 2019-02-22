@@ -57,6 +57,13 @@
 			path = "Rawat Singh";
 			sourceTree = "<group>";
 		};
+		10478C55221FD62400194CED /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		B46C5F6F221DBE22001B3163 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +83,7 @@
 		B46C5F7A221DBE22001B3163 /* RNTravels */ = {
 			isa = PBXGroup;
 			children = (
+				10478C55221FD62400194CED /* Test */,
 				10478C51221FD5B800194CED /* Rawat Singh */,
 				B46C5F93221DBE96001B3163 /* application */,
 				B46C5F92221DBE88001B3163 /* network */,
