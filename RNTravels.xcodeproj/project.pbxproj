@@ -47,6 +47,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10478C4F221FD50500194CED /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		10478C50221FD50900194CED /* Rawat Singh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Rawat Singh";
+			sourceTree = "<group>";
+		};
 		B46C5F6F221DBE22001B3163 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +80,8 @@
 		B46C5F7A221DBE22001B3163 /* RNTravels */ = {
 			isa = PBXGroup;
 			children = (
+				10478C50221FD50900194CED /* Rawat Singh */,
+				10478C4F221FD50500194CED /* New Group */,
 				B46C5F93221DBE96001B3163 /* application */,
 				B46C5F92221DBE88001B3163 /* network */,
 				B46C5F91221DBE7F001B3163 /* models */,
@@ -357,6 +373,7 @@
 				B46C5F8F221DBE22001B3163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

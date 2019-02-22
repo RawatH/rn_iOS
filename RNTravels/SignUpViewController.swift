@@ -46,7 +46,6 @@ class SignUpViewController: BaseViewController,UITextFieldDelegate {
 
     @IBAction func register(_ sender: Any) {
         
-    
         guard let registerUrl = URL(string: REGISTER_URL) else{
             return
         }
