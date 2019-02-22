@@ -17,6 +17,7 @@
 		B46C5F99221DC68B001B3163 /* postLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F98221DC68B001B3163 /* postLogin.storyboard */; };
 		B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */; };
 		B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */; };
+		B46C5FA0221F798C001B3163 /* NetworkContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9F221F798C001B3163 /* NetworkContants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B46C5F98221DC68B001B3163 /* postLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = postLogin.storyboard; sourceTree = "<group>"; };
 		B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B46C5F9F221F798C001B3163 /* NetworkContants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkContants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		B46C5F92221DBE88001B3163 /* network */ = {
 			isa = PBXGroup;
 			children = (
+				B46C5F9F221F798C001B3163 /* NetworkContants.swift */,
 			);
 			name = network;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
 				B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */,
 				B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */,
+				B46C5FA0221F798C001B3163 /* NetworkContants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

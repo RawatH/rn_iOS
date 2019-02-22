@@ -8,11 +8,22 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var confirmedPassword: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var travelId: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var firstname: UITextField!
+    
+    let REGISTER_URL:String = "http://qzipsolutions.com/travel/api/registerClient"
+    var paramsDict:[String:String]=[:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +32,58 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func prepareParamDict(){
+         paramsDict["first_name"] = firstname.text ?? "harish_ios"
+         paramsDict["last_name"]  = lastName.text ?? "rawat_ios"
+         paramsDict["email"] = email.text ?? "h@harish.com"
+         paramsDict["fb_id"] = ""
+         paramsDict["fcm_key"] = "1"
+         paramsDict["number"] = phoneNumber.text ?? "223344"
+         paramsDict["password"] = password.text  ?? "1234"
+         paramsDict["user_name"] = userName.text ?? "1234"
+         paramsDict["travel_id"] = travelId.text ?? ""
     }
-    */
+
+    @IBAction func register(_ sender: Any) {
+        
+    
+        guard let registerUrl = URL(string: REGISTER_URL) else{
+            return
+        }
+        
+        prepareParamDict()
+        
+        var request = URLRequest(url: registerUrl)
+        request.httpMethod = "POST"
+        
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: paramsDict, options: []) else {
+            return
+        }
+        
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            guard let data = data else{
+                return
+            }
+            
+            print(data)
+            
+            guard let response = response else{
+                return
+            }
+            
+            print(response)
+        }.resume()
+        
+        
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }
