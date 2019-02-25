@@ -7,16 +7,36 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+
 
 class LoginViewController: BaseViewController {
 
+    @IBOutlet weak var fbBtnContainer: UIView!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet weak var reqPasswordPopup: UIView!
+    @IBOutlet weak var popupCenterConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg.jpg")!)
-
+        reqPasswordPopup.layer.cornerRadius = 10
+        reqPasswordPopup.layer.masksToBounds = true
+        addFbLoginBtn()
+      
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func addFbLoginBtn(){
+        let fbLoginBtn = FBSDKLoginButton()
+        fbLoginBtn.readPermissions = ["public_profile"]
+        fbLoginBtn.center = CGPoint(x: fbBtnContainer.frame.size.width  / 2,
+                                     y: fbBtnContainer.frame.size.height / 2)
+//        fbLoginBtn.center = fbBtnContainer.convert(self.view.center, from:self.view.superview)
+        fbBtnContainer.addSubview(fbLoginBtn)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,15 +44,22 @@ class LoginViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func toggleReqPasswordCenterConstraint(_ showPopup :Bool) {
+        popupCenterConstraint.constant = showPopup ? 0 : -1000
+        UIView.animate(withDuration: 0.2, animations: {self.view.layoutIfNeeded()})
     }
-    */
+    
+    @IBAction func showRequestPasswordPopup(_ sender: Any) {
+        toggleReqPasswordCenterConstraint(true)
+    }
+    
+    @IBAction func closeReqPasswordPopup(_ sender: Any) {
+         toggleReqPasswordCenterConstraint(false)
+    }
+    
+    
+    @IBAction func reqForNewPassword(_ sender: Any) {
+        
+    }
 
 }

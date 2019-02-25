@@ -19,7 +19,7 @@ class SignUpViewController: BaseViewController,UITextFieldDelegate {
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var firstname: UITextField!
     
-    let REGISTER_URL:String = "http://qzipsolutions.com/travel/api/registerClient"
+
     var paramsDict:[String:String]=[:]
     
     override func viewDidLoad() {
@@ -46,7 +46,8 @@ class SignUpViewController: BaseViewController,UITextFieldDelegate {
 
     @IBAction func register(_ sender: Any) {
         
-        guard let registerUrl = URL(string: REGISTER_URL) else{
+    
+        guard let registerUrl = URL(string: NetworkConstants.getRegistrationUrl() ) else{
             return
         }
         
