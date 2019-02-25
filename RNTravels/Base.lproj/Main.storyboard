@@ -76,6 +76,9 @@
                                             <constraint firstAttribute="width" constant="38" id="drL-ff-DMe"/>
                                         </constraints>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="moveToDashboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNF-6p-Mhb"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJv-kB-PoD">
                                         <rect key="frame" x="38" y="73" width="248" height="43"/>
@@ -122,9 +125,13 @@
                                     <constraint firstItem="SJv-kB-PoD" firstAttribute="top" secondItem="9kX-lG-G0l" secondAttribute="bottom" constant="35" id="uL2-y4-JCJ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihk-zX-T8W">
-                                <rect key="frame" x="164" y="391" width="46" height="30"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzL-wE-ARP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="closeReqPasswordPopup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lrd-Iu-BNb"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jz-Zt-BX7">
                                 <rect key="frame" x="-462.5" y="219" width="300" height="230"/>
@@ -138,9 +145,13 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L36-Id-i40">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L36-Id-i40">
                                         <rect key="frame" x="18.5" y="100" width="262" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2ES-hw-07k"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="262" id="7xK-2w-tZ5"/>
+                                            <constraint firstAttribute="width" constant="262" id="Ihj-8o-Qsz"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -202,6 +213,8 @@
                                     <constraint firstItem="Em7-bI-c9P" firstAttribute="top" secondItem="2jz-Zt-BX7" secondAttribute="top" constant="8" id="DfE-Ul-04h"/>
                                     <constraint firstItem="YMo-Af-MVf" firstAttribute="top" secondItem="Em7-bI-c9P" secondAttribute="bottom" constant="125.5" id="EQ0-VW-fQ3"/>
                                     <constraint firstItem="YMo-Af-MVf" firstAttribute="centerX" secondItem="2jz-Zt-BX7" secondAttribute="centerX" id="FoY-GK-N1n"/>
+                                    <constraint firstItem="L36-Id-i40" firstAttribute="centerX" secondItem="2jz-Zt-BX7" secondAttribute="centerX" id="cKg-XM-gjK"/>
+                                    <constraint firstItem="L36-Id-i40" firstAttribute="centerY" secondItem="2jz-Zt-BX7" secondAttribute="centerY" id="kby-2X-jRN"/>
                                     <constraint firstItem="Em7-bI-c9P" firstAttribute="centerX" secondItem="2jz-Zt-BX7" secondAttribute="centerX" id="n1Z-PE-PZt"/>
                                     <constraint firstAttribute="width" constant="300" id="x6N-dg-mnh"/>
                                 </constraints>
@@ -224,7 +237,8 @@
                     <connections>
                         <outlet property="fbBtnContainer" destination="SJv-kB-PoD" id="uIQ-KI-eKK"/>
                         <outlet property="password" destination="jhC-nk-aWr" id="ENo-sg-kGU"/>
-                        <outlet property="popupCenterConstraint" destination="pOE-3w-4Cy" id="ieZ-ca-xbt"/>
+                        <outlet property="popupBg" destination="YzL-wE-ARP" id="Nxy-ea-ngL"/>
+                        <outlet property="popupCenterConstraint" destination="pOE-3w-4Cy" id="Beu-QD-hvV"/>
                         <outlet property="reqPasswordPopup" destination="2jz-Zt-BX7" id="wsR-es-8fT"/>
                         <outlet property="username" destination="vqb-s9-F3i" id="QLg-8B-d6m"/>
                     </connections>

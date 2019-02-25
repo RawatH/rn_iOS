@@ -15,10 +15,12 @@
 		B46C5F89221DBE22001B3163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F87221DBE22001B3163 /* LaunchScreen.storyboard */; };
 		B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F94221DBEBA001B3163 /* BaseViewController.swift */; };
 		B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F96221DBEFB001B3163 /* LoginViewController.swift */; };
-		B46C5F99221DC68B001B3163 /* postLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F98221DC68B001B3163 /* postLogin.storyboard */; };
 		B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */; };
 		B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */; };
 		B46C5FA0221F798C001B3163 /* NetworkContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9F221F798C001B3163 /* NetworkContants.swift */; };
+		B4EE043C222447A8004724F5 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4EE043B222447A8004724F5 /* Dashboard.storyboard */; };
+		B4EE043E222472C3004724F5 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE043D222472C3004724F5 /* DashboardCollectionViewCell.swift */; };
+		B4EE0440222480DC004724F5 /* PackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +35,12 @@
 		B46C5F8A221DBE22001B3163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B46C5F94221DBEBA001B3163 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B46C5F96221DBEFB001B3163 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B46C5F98221DC68B001B3163 /* postLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = postLogin.storyboard; sourceTree = "<group>"; };
 		B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B46C5F9F221F798C001B3163 /* NetworkContants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkContants.swift; sourceTree = "<group>"; };
+		B4EE043B222447A8004724F5 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		B4EE043D222472C3004724F5 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTableViewCell.swift; sourceTree = "<group>"; };
 		E4474B48A6F70FD95CAB39AC /* Pods_RNTravels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNTravels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,7 +103,7 @@
 				B46C5F87221DBE22001B3163 /* LaunchScreen.storyboard */,
 				B46C5F8A221DBE22001B3163 /* Info.plist */,
 				B46C5F82221DBE22001B3163 /* RNTravels.xcdatamodeld */,
-				B46C5F98221DC68B001B3163 /* postLogin.storyboard */,
+				B4EE043B222447A8004724F5 /* Dashboard.storyboard */,
 			);
 			path = RNTravels;
 			sourceTree = "<group>";
@@ -107,10 +111,12 @@
 		B46C5F90221DBE6E001B3163 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B4EE043D222472C3004724F5 /* DashboardCollectionViewCell.swift */,
 				B46C5F94221DBEBA001B3163 /* BaseViewController.swift */,
 				B46C5F96221DBEFB001B3163 /* LoginViewController.swift */,
 				B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */,
 				B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */,
+				B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -200,8 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46C5F89221DBE22001B3163 /* LaunchScreen.storyboard in Resources */,
+				B4EE043C222447A8004724F5 /* Dashboard.storyboard in Resources */,
 				B46C5F86221DBE22001B3163 /* Assets.xcassets in Resources */,
-				B46C5F99221DC68B001B3163 /* postLogin.storyboard in Resources */,
 				B46C5F81221DBE22001B3163 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */,
+				B4EE0440222480DC004724F5 /* PackageTableViewCell.swift in Sources */,
+				B4EE043E222472C3004724F5 /* DashboardCollectionViewCell.swift in Sources */,
 				B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */,
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,

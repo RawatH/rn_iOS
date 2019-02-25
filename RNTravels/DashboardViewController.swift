@@ -8,35 +8,71 @@
 
 import UIKit
 
-class DashboardViewController: BaseViewController {
-
+class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+    
+    var data:[Int]=[1,2,3,4,5,6]
+    
+    var tableData0:[Int]=[1,2,3,4,5,6,7,8,9,10]
+    var tableData1:[Int]=[21,22,23,24,25,26,27,28,29,30]
+    var tableData2:[Int]=[31,32,33,34,35,36,37,38,39,40]
+    
+    var collectionCellIndex:Int = 0
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadNextViewController()
-        // Do any additional setup after loading the view.
+        collectionView.isPagingEnabled = true
+        
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        collectionView.collectionViewLayout = layout
     }
     
-    func loadNextViewController(){
-        let isUserLogged = true
-        if isUserLogged {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! DashboardCollectionViewCell
+        
+        let tableView = cell.tableView
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        collectionCellIndex = indexPath.item
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height:view.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+}
+
+extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PkgTableCell", for: indexPath) as! PackageTableViewCell
+        
+        switch collectionCellIndex {
+            
+        case 1:
+            cell.packageLabel.text = String(tableData1[indexPath.item])
+        case 2:
+            cell.packageLabel.text = String(tableData2[indexPath.item])
+        default:
+            cell.packageLabel.text = String(tableData0[indexPath.item])
             
         }
+        
+        return cell
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

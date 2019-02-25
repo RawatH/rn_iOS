@@ -12,6 +12,7 @@ import FBSDKLoginKit
 
 class LoginViewController: BaseViewController {
 
+    @IBOutlet weak var popupBg: UIButton!
     @IBOutlet weak var fbBtnContainer: UIView!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
@@ -19,9 +20,13 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var reqPasswordPopup: UIView!
     @IBOutlet weak var popupCenterConstraint: NSLayoutConstraint!
     
+    var paramsDict:[String:String]=[:]
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg.jpg")!)
+        popupCenterConstraint.constant =  -500
         reqPasswordPopup.layer.cornerRadius = 10
         reqPasswordPopup.layer.masksToBounds = true
         addFbLoginBtn()
@@ -35,18 +40,14 @@ class LoginViewController: BaseViewController {
         fbLoginBtn.readPermissions = ["public_profile"]
         fbLoginBtn.center = CGPoint(x: fbBtnContainer.frame.size.width  / 2,
                                      y: fbBtnContainer.frame.size.height / 2)
-//        fbLoginBtn.center = fbBtnContainer.convert(self.view.center, from:self.view.superview)
         fbBtnContainer.addSubview(fbLoginBtn)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func toggleReqPasswordCenterConstraint(_ showPopup :Bool) {
-        popupCenterConstraint.constant = showPopup ? 0 : -1000
-        UIView.animate(withDuration: 0.2, animations: {self.view.layoutIfNeeded()})
+        popupCenterConstraint.constant = showPopup ? 0 : -500
+        popupBg.alpha = showPopup ? 0.5 : 0
+        UIView.animate(withDuration: 0.25, animations: {self.view.layoutIfNeeded()})
     }
     
     @IBAction func showRequestPasswordPopup(_ sender: Any) {
@@ -60,6 +61,12 @@ class LoginViewController: BaseViewController {
     
     @IBAction func reqForNewPassword(_ sender: Any) {
         
+    }
+    
+    @IBAction func moveToDashboard(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DashboardViewController")
+        self.present(controller, animated: true, completion: nil)
     }
 
 }
