@@ -64,9 +64,9 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func moveToDashboard(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "DashboardViewController")
-        self.present(controller, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let dashboardVC = storyboard.instantiateViewController(withIdentifier: "DashboardViewController")
+        self.navigationController?.viewControllers = [dashboardVC]
     }
 
 }

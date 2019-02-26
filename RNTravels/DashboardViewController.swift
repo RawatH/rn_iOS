@@ -10,15 +10,20 @@ import UIKit
 
 class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
-    var data:[Int]=[1,2,3,4,5,6]
+    @IBOutlet weak var optionActive: UILabel!
+    @IBOutlet weak var optionFollowing: UILabel!
+    @IBOutlet weak var optionPast: UILabel!
     
-    var tableData0:[Int]=[1,2,3,4,5,6,7,8,9,10]
-    var tableData1:[Int]=[21,22,23,24,25,26,27,28,29,30]
-    var tableData2:[Int]=[31,32,33,34,35,36,37,38,39,40]
+    @IBOutlet weak var followBtnContainer: UIView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var tableData0:[Int]=[11,12,13,14]
+    var tableData1:[Int]=[21,22,23,24]
+    var tableData2:[Int]=[31,32,33,34]
     
     var collectionCellIndex:Int = 0
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +36,7 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -41,7 +46,7 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
         tableView?.delegate = self
         tableView?.dataSource = self
         collectionCellIndex = indexPath.item
-        
+        setupOptionFont()
         return cell
     }
     
@@ -52,11 +57,31 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+    func setupOptionFont(){
+        switch collectionCellIndex {
+        case 1:
+            optionActive.textColor = .white
+            optionPast.textColor = .white
+            optionFollowing.textColor = .green
+        case 2:
+            optionActive.textColor = .white
+            optionPast.textColor = .green
+            optionFollowing.textColor = .white
+        default:
+            optionActive.textColor = .green
+            optionPast.textColor = .white
+            optionFollowing.textColor = .white
+            
+        }
+        
+    }
 }
 
 extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,7 +97,6 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
             cell.packageLabel.text = String(tableData0[indexPath.item])
             
         }
-        
         return cell
     }
 }
