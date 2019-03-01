@@ -21,6 +21,7 @@
 		B4EE043E222472C3004724F5 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE043D222472C3004724F5 /* DashboardCollectionViewCell.swift */; };
 		B4EE0440222480DC004724F5 /* PackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */; };
 		B4EE04422225BE2F004724F5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE04412225BE2F004724F5 /* MainViewController.swift */; };
+		B4EE04442228CAAB004724F5 /* DashboardMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE04432228CAAB004724F5 /* DashboardMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B4EE043D222472C3004724F5 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTableViewCell.swift; sourceTree = "<group>"; };
 		B4EE04412225BE2F004724F5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B4EE04432228CAAB004724F5 /* DashboardMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMenuViewController.swift; sourceTree = "<group>"; };
 		E4474B48A6F70FD95CAB39AC /* Pods_RNTravels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNTravels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */,
 				B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */,
 				B4EE04412225BE2F004724F5 /* MainViewController.swift */,
+				B4EE04432228CAAB004724F5 /* DashboardMenuViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */,
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
+				B4EE04442228CAAB004724F5 /* DashboardMenuViewController.swift in Sources */,
 				B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */,
 				B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */,
 				B46C5FA0221F798C001B3163 /* NetworkContants.swift in Sources */,

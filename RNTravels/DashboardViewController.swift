@@ -10,6 +10,7 @@ import UIKit
 
 class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
+    
     @IBOutlet weak var optionActive: UILabel!
     @IBOutlet weak var optionFollowing: UILabel!
     @IBOutlet weak var optionPast: UILabel!
@@ -23,6 +24,9 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
     
     var collectionCellIndex:Int = 0
     
+    var isMenuOpen:Bool = false
+    var dashboardMenuVC : DashboardMenuViewController?
+    
     
     
     override func viewDidLoad() {
@@ -33,6 +37,10 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = layout
+        self.navigationItem.title = "Travel Desk"
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        dashboardMenuVC = storyboard.instantiateViewController(withIdentifier: "DashboardMenuViewController") as! DashboardMenuViewController
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -51,7 +59,7 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height:view.frame.height)
+        return CGSize(width: view.frame.width, height:view.frame.height-70-self.navigationController!.navigationBar.frame.size.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -76,7 +84,25 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
         }
         
     }
+    
+    //Open MENU
+    @IBAction func slideOutMenu(_ sender: Any) {
+        if !isMenuOpen{
+            if let menuVC = dashboardMenuVC {
+                self.addChildViewController(menuVC)
+                self.view.addSubview(menuVC.view)
+                isMenuOpen = true
+            }
+        }else{
+            if let menuVC = dashboardMenuVC {
+               menuVC.view.removeFromSuperview()
+               isMenuOpen = false
+            }
+        }
+    }
 }
+
+
 
 extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
     
@@ -99,4 +125,11 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("----Selection : ---\(indexPath.row)")
+    }
+    
+
 }
