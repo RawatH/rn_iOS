@@ -31,6 +31,7 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(false, animated: true)
         collectionView.isPagingEnabled = true
         
         
@@ -65,6 +66,8 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+
     
     func setupOptionFont(){
         switch collectionCellIndex {
@@ -129,6 +132,10 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print("----Selection : ---\(indexPath.row)")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let pkgDetailVC = storyboard.instantiateViewController(withIdentifier:"PackageDetailController")
+        self.navigationController?.pushViewController(pkgDetailVC, animated: true)
+        
     }
     
 

@@ -30,7 +30,7 @@ class LoginViewController: BaseViewController {
         reqPasswordPopup.layer.cornerRadius = 10
         reqPasswordPopup.layer.masksToBounds = true
         addFbLoginBtn()
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.setNavigationBarHidden(true, animated: true)
       
         // Do any additional setup after loading the view.
     }

@@ -1,17 +1,18 @@
 //
-//  BaseViewController.swift
+//  MenuBaseViewController.swift
 //  RNTravels
 //
-//  Created by Harish on 20/02/19.
+//  Created by Harish on 03/03/19.
 //  Copyright © 2019 PACTS. All rights reserved.
 //
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class MenuBaseViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4BFF32B282ABE1EEFE1FB4F2 /* Pods_RNTravels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4474B48A6F70FD95CAB39AC /* Pods_RNTravels.framework */; };
+		B4380B5C222BEC550005B789 /* MenuBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4380B5B222BEC550005B789 /* MenuBaseViewController.swift */; };
+		B4380B60222BF5550005B789 /* RNImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4380B5F222BF5550005B789 /* RNImageLabelView.swift */; };
+		B4380B67222C57770005B789 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4380B66222C57770005B789 /* File.swift */; };
 		B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F7B221DBE22001B3163 /* AppDelegate.swift */; };
 		B46C5F81221DBE22001B3163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46C5F7F221DBE22001B3163 /* Main.storyboard */; };
 		B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F82221DBE22001B3163 /* RNTravels.xcdatamodeld */; };
@@ -22,11 +25,16 @@
 		B4EE0440222480DC004724F5 /* PackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */; };
 		B4EE04422225BE2F004724F5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE04412225BE2F004724F5 /* MainViewController.swift */; };
 		B4EE04442228CAAB004724F5 /* DashboardMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE04432228CAAB004724F5 /* DashboardMenuViewController.swift */; };
+		B4EE0446222A1958004724F5 /* DrawerMenuCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE0445222A1958004724F5 /* DrawerMenuCellItem.swift */; };
+		B4EE0448222B07EA004724F5 /* PackageDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE0447222B07EA004724F5 /* PackageDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		038F19A635CE9A506C1ABC84 /* Pods-RNTravels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTravels.release.xcconfig"; path = "Target Support Files/Pods-RNTravels/Pods-RNTravels.release.xcconfig"; sourceTree = "<group>"; };
 		59977987FC2DFE5C84451487 /* Pods-RNTravels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTravels.debug.xcconfig"; path = "Target Support Files/Pods-RNTravels/Pods-RNTravels.debug.xcconfig"; sourceTree = "<group>"; };
+		B4380B5B222BEC550005B789 /* MenuBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBaseViewController.swift; sourceTree = "<group>"; };
+		B4380B5F222BF5550005B789 /* RNImageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNImageLabelView.swift; sourceTree = "<group>"; };
+		B4380B66222C57770005B789 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		B46C5F78221DBE22001B3163 /* RNTravels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNTravels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46C5F7B221DBE22001B3163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B46C5F80221DBE22001B3163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +51,8 @@
 		B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTableViewCell.swift; sourceTree = "<group>"; };
 		B4EE04412225BE2F004724F5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B4EE04432228CAAB004724F5 /* DashboardMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardMenuViewController.swift; sourceTree = "<group>"; };
+		B4EE0445222A1958004724F5 /* DrawerMenuCellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerMenuCellItem.swift; sourceTree = "<group>"; };
+		B4EE0447222B07EA004724F5 /* PackageDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailController.swift; sourceTree = "<group>"; };
 		E4474B48A6F70FD95CAB39AC /* Pods_RNTravels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNTravels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +85,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B4380B63222C509F0005B789 /* tablecells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tablecells;
+			sourceTree = "<group>";
+		};
 		B46C5F6F221DBE22001B3163 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +113,7 @@
 		B46C5F7A221DBE22001B3163 /* RNTravels */ = {
 			isa = PBXGroup;
 			children = (
+				B4380B63222C509F0005B789 /* tablecells */,
 				B46C5F93221DBE96001B3163 /* application */,
 				B46C5F92221DBE88001B3163 /* network */,
 				B46C5F91221DBE7F001B3163 /* models */,
@@ -120,6 +138,10 @@
 				B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */,
 				B4EE04412225BE2F004724F5 /* MainViewController.swift */,
 				B4EE04432228CAAB004724F5 /* DashboardMenuViewController.swift */,
+				B4EE0445222A1958004724F5 /* DrawerMenuCellItem.swift */,
+				B4EE0447222B07EA004724F5 /* PackageDetailController.swift */,
+				B4380B5B222BEC550005B789 /* MenuBaseViewController.swift */,
+				B4380B5F222BF5550005B789 /* RNImageLabelView.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -127,6 +149,7 @@
 		B46C5F91221DBE7F001B3163 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				B4380B66222C57770005B789 /* File.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -267,16 +290,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4EE04422225BE2F004724F5 /* MainViewController.swift in Sources */,
+				B4EE0448222B07EA004724F5 /* PackageDetailController.swift in Sources */,
 				B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */,
 				B4EE0440222480DC004724F5 /* PackageTableViewCell.swift in Sources */,
 				B4EE043E222472C3004724F5 /* DashboardCollectionViewCell.swift in Sources */,
+				B4380B67222C57770005B789 /* File.swift in Sources */,
 				B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */,
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
 				B4EE04442228CAAB004724F5 /* DashboardMenuViewController.swift in Sources */,
+				B4EE0446222A1958004724F5 /* DrawerMenuCellItem.swift in Sources */,
 				B46C5F97221DBEFB001B3163 /* LoginViewController.swift in Sources */,
 				B46C5F7C221DBE22001B3163 /* AppDelegate.swift in Sources */,
+				B4380B5C222BEC550005B789 /* MenuBaseViewController.swift in Sources */,
 				B46C5FA0221F798C001B3163 /* NetworkContants.swift in Sources */,
+				B4380B60222BF5550005B789 /* RNImageLabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

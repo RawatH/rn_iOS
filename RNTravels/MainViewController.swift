@@ -24,12 +24,13 @@ class MainViewController: UINavigationController {
         if isUserLoggedIn{
             let rootVC = mainStoryBoard.instantiateViewController(withIdentifier: "RNNavigationVC") as! UINavigationController
              self.viewControllers = [rootVC]
-            navigationController?.setNavigationBarHidden(true, animated: true)
+           
             
         }else{
             navigationController?.setNavigationBarHidden(true, animated: true)
             let rootVC = mainStoryBoard.instantiateViewController(withIdentifier: "RNLoginVC") as! LoginViewController
             self.viewControllers = [rootVC]
+            
         }
         
         
