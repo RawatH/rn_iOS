@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bg.jpg",
+      "filename" : "notification_grey_bg.png",
       "scale" : "1x"
     }
   ],
