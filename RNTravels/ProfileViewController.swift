@@ -1,24 +1,19 @@
 //
-//  MenuBaseViewController.swift
+//  ProfileViewController.swift
 //  RNTravels
 //
-//  Created by Harish on 03/03/19.
+//  Created by Harish on 17/03/19.
 //  Copyright © 2019 PACTS. All rights reserved.
 //
 
 import UIKit
 
-class MenuBaseViewController: BaseViewController {
+class ProfileViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -27,7 +22,7 @@ class MenuBaseViewController: BaseViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+        // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
     */

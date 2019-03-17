@@ -11,6 +11,7 @@ import UIKit
 class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
     
+    
     @IBOutlet weak var optionActive: UILabel!
     @IBOutlet weak var optionFollowing: UILabel!
     @IBOutlet weak var optionPast: UILabel!
@@ -23,12 +24,7 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
     var tableData2:[Int]=[31,32,33,34]
     
     var collectionCellIndex:Int = 0
-    
-    var isMenuOpen:Bool = false
-    var dashboardMenuVC : DashboardMenuViewController?
-    
-    
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: true)
@@ -40,8 +36,7 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
         collectionView.collectionViewLayout = layout
         self.navigationItem.title = "Travel Desk"
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        dashboardMenuVC = storyboard.instantiateViewController(withIdentifier: "DashboardMenuViewController") as! DashboardMenuViewController
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -88,21 +83,6 @@ class DashboardViewController: BaseViewController,UICollectionViewDelegate,UICol
         
     }
     
-    //Open MENU
-    @IBAction func slideOutMenu(_ sender: Any) {
-        if !isMenuOpen{
-            if let menuVC = dashboardMenuVC {
-                self.addChildViewController(menuVC)
-                self.view.addSubview(menuVC.view)
-                isMenuOpen = true
-            }
-        }else{
-            if let menuVC = dashboardMenuVC {
-               menuVC.view.removeFromSuperview()
-               isMenuOpen = false
-            }
-        }
-    }
 }
 
 
@@ -130,7 +110,6 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         print("----Selection : ---\(indexPath.row)")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let pkgDetailVC = storyboard.instantiateViewController(withIdentifier:"PackageDetailController")

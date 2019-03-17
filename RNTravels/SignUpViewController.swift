@@ -20,6 +20,9 @@ class SignUpViewController: BaseViewController,UITextFieldDelegate {
     @IBOutlet weak var firstname: UITextField!
     
 
+    @IBAction func closeRegVC(_ sender: Any) {
+        self.dismiss(animated: true, completion:nil)
+    }
     var paramsDict:[String:String]=[:]
     
     override func viewDidLoad() {
