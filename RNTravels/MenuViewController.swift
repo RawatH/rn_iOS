@@ -70,7 +70,7 @@ class MenuViewController: BaseViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DrawerCell", for: indexPath) as! DrawerMenuCellItem
+        let cell = tableView.cellForRow(at: indexPath)
         print("\(drawerMenu[indexPath.row])")
         tableView.deselectRow(at: indexPath, animated: true)
         menuDelegate.onMenuItemSelected(drawerMenu[indexPath.row]);
