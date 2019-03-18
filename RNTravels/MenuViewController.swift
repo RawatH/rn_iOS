@@ -24,6 +24,8 @@ enum DrawerItem : String {
     case Logout = "Logout"
 }
 
+
+
 class MenuViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     
     var menuDelegate:MenuDelegate!
@@ -39,8 +41,21 @@ class MenuViewController: BaseViewController,UITableViewDelegate,UITableViewData
                                DrawerItem.Logout.rawValue
     ]
   
+    let menuIcon:[UIImage]=[UIImage(named: "menu_trip")!,
+                            UIImage(named: "menu_contact_info")!,
+                            UIImage(named: "menu_notification")!,
+                            UIImage(named: "menu_password")!,
+                            UIImage(named: "menu_profile")!,
+                            UIImage(named: "menu_forex")!,
+                            UIImage(named: "menu_google_translate")!,
+                            UIImage(named: "menu_logout")!
+                            ]
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,8 +64,8 @@ class MenuViewController: BaseViewController,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DrawerCell", for: indexPath) as! DrawerMenuCellItem
-        
         cell.title.text = drawerMenu[indexPath.item]
+        cell.img.image = menuIcon[indexPath.item]
         return cell
     }
     

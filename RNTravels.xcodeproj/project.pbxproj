@@ -26,6 +26,7 @@
 		B4CA3529223E9C7F005D094E /* GTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3528223E9C7F005D094E /* GTranslateViewController.swift */; };
 		B4CA352B223E9C96005D094E /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA352A223E9C96005D094E /* ConversionViewController.swift */; };
 		B4CA352D223E9CA8005D094E /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA352C223E9CA8005D094E /* PasswordViewController.swift */; };
+		B4CA352F223F3896005D094E /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA352E223F3896005D094E /* EmergencyViewController.swift */; };
 		B4EE043E222472C3004724F5 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE043D222472C3004724F5 /* DashboardCollectionViewCell.swift */; };
 		B4EE0440222480DC004724F5 /* PackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */; };
 		B4EE04422225BE2F004724F5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE04412225BE2F004724F5 /* MainViewController.swift */; };
@@ -57,6 +58,7 @@
 		B4CA3528223E9C7F005D094E /* GTranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTranslateViewController.swift; sourceTree = "<group>"; };
 		B4CA352A223E9C96005D094E /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		B4CA352C223E9CA8005D094E /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		B4CA352E223F3896005D094E /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		B4EE043D222472C3004724F5 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4EE043F222480DC004724F5 /* PackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTableViewCell.swift; sourceTree = "<group>"; };
 		B4EE04412225BE2F004724F5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				B4CA3528223E9C7F005D094E /* GTranslateViewController.swift */,
 				B4CA352A223E9C96005D094E /* ConversionViewController.swift */,
 				B4CA352C223E9CA8005D094E /* PasswordViewController.swift */,
+				B4CA352E223F3896005D094E /* EmergencyViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				B4380B67222C57770005B789 /* UserProfileVO.swift in Sources */,
 				B4CA3525223E9AAF005D094E /* ProfileViewController.swift in Sources */,
 				B46C5F84221DBE22001B3163 /* RNTravels.xcdatamodeld in Sources */,
+				B4CA352F223F3896005D094E /* EmergencyViewController.swift in Sources */,
 				B46C5F95221DBEBA001B3163 /* BaseViewController.swift in Sources */,
 				B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */,
 				B4EE04442228CAAB004724F5 /* MenuViewController.swift in Sources */,
