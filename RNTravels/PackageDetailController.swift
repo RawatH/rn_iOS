@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PackageDetailController:BaseViewController {
+class PackageDetailController:MViewController {
 
     @IBOutlet weak var feedbackBtn: UIButton!
     override func viewDidLoad() {

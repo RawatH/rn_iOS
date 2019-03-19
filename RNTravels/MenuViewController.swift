@@ -10,7 +10,6 @@ import UIKit
 
 protocol MenuDelegate {
     func onMenuItemSelected(_ drawerItem : String)
-    func toggleMenuController()
 }
 
 enum DrawerItem : String {

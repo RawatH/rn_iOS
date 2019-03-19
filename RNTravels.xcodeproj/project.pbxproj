@@ -20,6 +20,7 @@
 		B46C5F9B221E3E81001B3163 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */; };
 		B46C5F9D221F10F0001B3163 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */; };
 		B46C5FA0221F798C001B3163 /* NetworkContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5F9F221F798C001B3163 /* NetworkContants.swift */; };
+		B49F9DCA22415FE700BF8804 /* MViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F9DC922415FE700BF8804 /* MViewController.swift */; };
 		B4CA3523223E8594005D094E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3522223E8594005D094E /* NotificationViewController.swift */; };
 		B4CA3525223E9AAF005D094E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3524223E9AAF005D094E /* ProfileViewController.swift */; };
 		B4CA3527223E9B34005D094E /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA3526223E9B34005D094E /* ContactInfoViewController.swift */; };
@@ -52,6 +53,7 @@
 		B46C5F9A221E3E81001B3163 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B46C5F9C221F10F0001B3163 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B46C5F9F221F798C001B3163 /* NetworkContants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkContants.swift; sourceTree = "<group>"; };
+		B49F9DC922415FE700BF8804 /* MViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewController.swift; sourceTree = "<group>"; };
 		B4CA3522223E8594005D094E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		B4CA3524223E9AAF005D094E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B4CA3526223E9B34005D094E /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				B4CA352A223E9C96005D094E /* ConversionViewController.swift */,
 				B4CA352C223E9CA8005D094E /* PasswordViewController.swift */,
 				B4CA352E223F3896005D094E /* EmergencyViewController.swift */,
+				B49F9DC922415FE700BF8804 /* MViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49F9DCA22415FE700BF8804 /* MViewController.swift in Sources */,
 				B4EE04422225BE2F004724F5 /* MainViewController.swift in Sources */,
 				B4EE0448222B07EA004724F5 /* PackageDetailController.swift in Sources */,
 				B4CA3523223E8594005D094E /* NotificationViewController.swift in Sources */,
