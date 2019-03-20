@@ -65,49 +65,55 @@ class MViewController: BaseViewController , MenuDelegate {
     }
     
     func onMenuItemSelected(_ drawerItem : String) {
-        
+        toggleMenuController()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        var nextVC:BaseViewController!
+        var nextVC:MViewController!
         
         switch drawerItem {
         case DrawerItem.Trips.rawValue :
             if self is DashboardViewController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"DashboardViewController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"DashboardViewController") as? MViewController
             }
         case DrawerItem.ContactInfo.rawValue:
             if self is ContactInfoViewController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"ContactInfoViewController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"ContactInfoViewController") as? MViewController
             }
         case DrawerItem.Notification.rawValue:
             if self is NotificationViewController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"NotificationViewController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"NotificationViewController") as? MViewController
             }
         case DrawerItem.Password.rawValue:
             if self is PackageDetailController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"PackageDetailController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"PackageDetailController") as? MViewController
             }
         case DrawerItem.Profile.rawValue:
             if self is ProfileViewController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"ProfileViewController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"ProfileViewController") as? MViewController
             }
         case DrawerItem.ForexRates.rawValue:
             if self is ConversionViewController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"ConversionViewController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"ConversionViewController") as? MViewController
             }
         case DrawerItem.GoogleTranslate.rawValue:
             if self is GTranslateViewController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"GTranslateViewController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"GTranslateViewController") as? MViewController
             }
         case DrawerItem.Logout.rawValue:
             if self is PackageDetailController == false {
-                nextVC = storyboard.instantiateViewController(withIdentifier:"PackageDetailController") as? BaseViewController
+                nextVC = storyboard.instantiateViewController(withIdentifier:"PackageDetailController") as? MViewController
             }
         default:
             nextVC = nil
         }
         
-        if nextVC != nil {
+        if let nextVC = nextVC {
+            if let viewControllers = self.navigationController?.viewControllers {
+                for vc in viewControllers {
+                   
+                }
+            }
+            
             self.navigationController?.pushViewController(nextVC, animated: true)
         }
     }

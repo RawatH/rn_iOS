@@ -114,6 +114,7 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let pkgDetailVC = storyboard.instantiateViewController(withIdentifier:"PackageDetailController")
         self.navigationController?.pushViewController(pkgDetailVC, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         
     }
     
